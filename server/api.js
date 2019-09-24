@@ -5,7 +5,8 @@ api.get('/holis/', (req, res) => {
   res.status(200).json({ message: 'ahi va!' });
 });
 
-api.post('/login/', (req, res) => {
+api.post('/users/authenticate', (req, res) => {
+  console.log('entró API')
   request.post(
     'http://localhost:8080/user/login',
     {

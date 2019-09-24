@@ -1,7 +1,7 @@
 import { userConstants } from '../_constants';
 import { userService } from '../_services';
 import { alertActions } from '.';
-import { history } from '../_helpers';
+import history from '../utils/history';
 
 export const userActions = {
   login,
@@ -18,6 +18,7 @@ function login(username, password) {
     userService.login(username, password).then(
       user => {
         dispatch(success(user));
+        console.log('trató de redireccionar');
         history.push('/');
       },
       error => {

@@ -1,4 +1,3 @@
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import React from 'react';
 
