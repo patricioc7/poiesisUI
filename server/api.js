@@ -24,7 +24,7 @@ api.post('/login/', (req, res) => {
         return;
       }
       console.log(body);
-      res.status(200).json({ jwt: body.token, userName: body.name });
+      res.status(200).json({ jwt: body.token, username: body.name });
     },
   );
 });
